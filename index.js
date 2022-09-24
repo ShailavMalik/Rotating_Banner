@@ -5,12 +5,10 @@ let width;
 function myFunction(x) {
     if (x.matches) {
         width = document.body.clientWidth;
-        document.querySelector("html").style.backgroundColor = "violet";
     }
 
     else {
         width = 1000;
-        document.querySelector("html").style.backgroundColor = "yellow";
     }
 }
 
@@ -20,7 +18,6 @@ let mmObj = window.matchMedia("(max-width:1000px)");
 myFunction(mmObj);
 
 mmObj.addEventListener('change', myFunction);
-// mmObj.addEventListener('change', function(){location.reload()} );
 
 function rotateBanner() {
     if (imgStatus === 1) {
